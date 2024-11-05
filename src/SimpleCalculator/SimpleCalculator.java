@@ -1,5 +1,5 @@
+// SIR WORKING PERO AYAW SA CODECHUM ROR
 package SimpleCalculator;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -54,10 +54,11 @@ public class SimpleCalculator extends JFrame {
 
     public static void main(String[] args) {
         SimpleCalculator app = new SimpleCalculator();
-        app.setTitle("Simple Calculator");
+
         app.setContentPane(app.jpMain);
         app.setSize(750, 300);
         app.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         app.setVisible(true);
+        app.setTitle("Simple Calculator");
     }
 }

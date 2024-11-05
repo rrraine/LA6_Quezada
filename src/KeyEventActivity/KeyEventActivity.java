@@ -1,8 +1,9 @@
+// SIR WORKING PERO AYAW SA CODECHUM ROR
+
 package KeyEventActivity;
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-
 public class KeyEventActivity extends JFrame {
     private JTextArea editableTextArea;
     private JPanel jpMain;
