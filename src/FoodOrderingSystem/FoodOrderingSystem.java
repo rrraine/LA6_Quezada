@@ -33,15 +33,13 @@ public class FoodOrderingSystem extends JFrame{
                 double amount = 0;
                 int i = 0;
 
-                // Calculate the total amount based on selected food items using for-each loop
                 for (JCheckBox food : foods) {
                     if (food.isSelected()) {
                         amount += prices[i];
                     }
                     i++;
                 }
-
-                // Apply the selected discount using for-each loop
+                
                 double discount = 0.0;
                 int j = 0;
                 for (JRadioButton discountOption : discounts) {

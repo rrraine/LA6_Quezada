@@ -14,6 +14,6 @@ public class ItemListener extends JFrame{
     private JLabel proficiencyLabel;
 
     public static void main(String[] args) {
-        
+
     }
 }
