@@ -9,24 +9,37 @@ public class LeapYearChecker extends JFrame {
     private JTextField yearTextField;
     private JButton checkYearButton;
 
-    public LeapYearChecker(){
+    LeapYearChecker(){
         checkYearButton.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent e) {
-                int year = Integer.parseInt(yearTextField.getText());
-                if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
-                    JOptionPane.showMessageDialog(null, "Leap year");
-                } else {
-                    JOptionPane.showMessageDialog(null, "Not a leap year");
-                }
+                String input = yearTextField.getText().trim();
+                int year =  Integer.parseInt(input);
+                if(isLeap(year)){
+                    JOptionPane.showMessageDialog(null, "Leap Year");
+                }  else { JOptionPane.showMessageDialog(null, "Not a leap year");}
                 yearTextField.setText("");
             }
+
         });
+
     }
+
+    public static boolean isLeap(int year) {
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                return year % 400 == 0;
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    }
+
+
     public static void main(String[] args) {
         LeapYearChecker app = new LeapYearChecker();
-
         app.setContentPane(app.jpMain);
         app.setSize(300, 200);
         app.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

@@ -33,12 +33,14 @@ public class FoodOrderingSystem extends JFrame{
                 double amount = 0;
                 int i = 0;
 
+
                 for (JCheckBox food : foods) {
                     if (food.isSelected()) {
                         amount += prices[i];
                     }
                     i++;
                 }
+
 
                 double discount = 0.0;
                 int j = 0;
