@@ -39,7 +39,7 @@ public class FoodOrderingSystem extends JFrame{
                     }
                     i++;
                 }
-                
+
                 double discount = 0.0;
                 int j = 0;
                 for (JRadioButton discountOption : discounts) {

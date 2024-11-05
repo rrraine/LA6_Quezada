@@ -20,15 +20,17 @@ public class LeapYearChecker extends JFrame {
                 } else {
                     JOptionPane.showMessageDialog(null, "Not a leap year");
                 }
+                yearTextField.setText("");
             }
         });
     }
     public static void main(String[] args) {
         LeapYearChecker app = new LeapYearChecker();
-        app.setTitle("Leap Year Checker");
+
         app.setContentPane(app.jpMain);
         app.setSize(300, 200);
         app.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         app.setVisible(true);
+        app.setTitle("Leap Year Checker");
     }
 }
